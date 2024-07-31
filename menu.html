@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tiifintales/menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Rubik", sans-serif;
+    }
+    body {
+      margin: 0 auto;
+      width: 1210px;
+      height: 100vh;
+    }
+    div {
+      position: relative;
+      margin-top: 80px;
+    }
+    strong {
+      background-color: rgb(182, 48, 48);
+      padding: 12px 18px;
+      text-transform: capitalize;
+      font-weight: bold;
+      position: absolute;
+      top: 100%;
+      left: 15%;
+      margin-top: 12px;
+    }
+    article {
+      display: flex;
+      /* align-items: center; */
+      justify-content: space-between;
+    }
+    aside {
+      margin-left: 80px;
+      width: 450px;
+      /* height: 100vh; */
+      /* box-shadow: 2px 2px 10px rgb(154, 154, 154); */
+    }
+    section {
+      display: grid;
+      grid-template-columns: 320px 320px 320px;
+      align-items: center;
+      justify-content: center;
+      margin-top: -2%;
+      column-gap: 24px;
+    }
+
+    img {
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+    .str-1 {
+      position: absolute;
+      top: 100%;
+      left: 8%;
+      margin-top: 12px;
+      border-radius: 10px;
+    }
+    .str-11 {
+      position: absolute;
+      top: 100%;
+      left: 6%;
+      margin-top: 12px;
+      border-radius: 10px;
+    }
+    .str-2 {
+      position: absolute;
+      top: 100%;
+      left: 11%;
+      margin-top: 12px;
+      border-radius: 10px;
+    }
+    .str-22 {
+      position: absolute;
+      top: 100%;
+      left: 12%;
+      margin-top: 12px;
+      border-radius: 10px;
+      grid-row: 2/2;
+    }
+    .str-3 {
+      position: absolute;
+      top: 100%;
+      left: 14%;
+      margin-top: 12px;
+      border-radius: 10px;
+    }
+    .str-33 {
+      position: absolute;
+      top: 100%;
+      left: 18%;
+      margin-top: 12px;
+      border-radius: 10px;
+    }
+    .str-1:hover,
+    .str-2:hover,
+    .str-3:hover {
+      cursor: pointer;
+      background-color: #1d8002;
+      color: aliceblue;
+    }
+    .str-11:hover,
+    .str-22:hover,
+    .str-33:hover {
+      cursor: pointer;
+      background-color: #1d8002;
+      color: aliceblue;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      background-color: #d76010;
+      border: none;
+      border-radius: 10px;
+    }
+    button {
+      margin-left: 64px;
+    }
+    .btn-icon {
+      width: 22px;
+      background-color: azure;
+      margin-left: 12px;
+      border-radius: 30px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px 18px;
+      margin-top: 24px;
+      /* background-color: #d76010;
+      color: rgb(198, 198, 199); */
+    }
+    .cart-icon {
+      width: 18px;
+    }
+  </style>
+  <body>
+    <article>
+      <section>
+        <div>
+          <img src="veg-1.jpg" width="320px" height="320px" />
+          <button>
+            ADD TO CART<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+          <strong class="str-1">Rice/chapathi & brinjal curry</strong>
+        </div>
+        <div>
+          <img src="veg-2.jpg" width="320px" height="320px" />
+          <button>
+            ADD TO CART<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+          <strong class="str-2">Rice/chapathi & dal curry</strong>
+        </div>
+        <div>
+          <img src="veg-3.jpg" width="320px" height="320px" />
+          <button>
+            ADD TO CART<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+          <strong class="str-3">Chapathi & potato curry</strong>
+        </div>
+        <div>
+          <img src="non-veg1.jpg" width="320px" height="320px" />
+          <button>
+            ADD TO CART<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+          <strong class="str-11">Rice/chapathi & mutton curry</strong>
+        </div>
+        <div>
+          <img src="non-veg3.jpg" width="320px" height="320px" />
+          <button>
+            ADD TO CART<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+          <strong class="str-22">flavoured rice & chicken </strong>
+        </div>
+        <div>
+          <img src="non-veg2.jpg" width="320px" height="320px" />
+          <button>
+            ADD TO CART<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+          <strong class="str-33">Roti & chicken curry</strong>
+        </div>
+      </section>
+      <aside>
+        <h4>
+          ADD TO CART<svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="cart-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
+          </svg>
+        </h4>
+      </aside>
+    </article>
+    <script src="menu.js"></script>
+  </body>
+</html>
